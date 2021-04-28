@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reserva</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="bootstrap/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body class="container">
+    <header class="mt-5 d-flex justify-content-center align-items-center">
+        <h1 class="mt-5 text-center">Reseva de <br> Quartos</h1>
+        <img class="" src="images/logo.png" alt="sino">
+    </header>
+    <main>
+        <form action="" method="post">
+            <div class="row mt-5">
+                <div class="col">
+                    <label for="nome">Nome</label>
+                    <input class="form-control" name="nome" id="nome" type="text">
+                </div>
+                <div class="col">
+                    <label for="tel">Telefone</label>
+                    <input class="form-control" name="tel" id="tel" type="text">
+                    <input type="hidden" name="wpp" value="Não">
+                    <input class="mt-0" type="checkbox" name="wpp" value="Sim" class="form-check-input" id="wpp">
+                    <label class="mt-2 form-check-label" for="wpp">Whatsapp</label>
+                </div>
+            </div>
+                <label class="my-1 mr-2" for="inlineFormCustomSelectPref">Preference</label>
+                <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+                    <option selected>Choose...</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                </select>
+        </form>
+    </main>
+
+
+
+    </form>
+
+
+
+
+
+
+    <script src="bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="js/js.js"></script>
+</body>
+
+</html>
