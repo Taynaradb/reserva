@@ -10,17 +10,24 @@ h1{
     font-family: 'Original Surfer', cursive;
 }
 
+main{
+    text-transform: uppercase;
+}
+
 .box{
     
     border-radius: 1rem;
-    background-color: rgba(241, 241, 241, 0.8);
+    background-color: rgba(241, 241, 241, 0.9);
 }
 
-
+.mybtn, .btn:hover{
+    background-color: #602FA8 !important;
+    color: #fff !important;
+}
 
 .lilbox{
     border-radius: 1rem;
     min-height: 195x;
-    min-width: 250px;
+    min-width: 200px;
     background-color: #fff;
 }

@@ -9,7 +9,8 @@
     <link href="css/style.css" rel="stylesheet" type="text/css">
     <link href="bootstrap/bootstrap.min.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Original+Surfer&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Original+Surfer&display=swap"
+        rel="stylesheet">
 </head>
 
 <body class="container">
@@ -55,6 +56,35 @@
                         </div>
                     </div>
                 </div>
+                <div class="mt-5 text-center">
+                    <input type="hidden" name="wpp" value="Nenhum">
+                    <input class="" type="checkbox" name="fuma" value="Fumante" class="form-check-input" id="wpp">
+                    <label class="me-3 form-check-label" for="fuma">Fumante</label>
+                    <input class="" type="checkbox" name="cafe" value="Café da manhã" class="form-check-input"
+                        id="wpp">
+                    <label class="me-3 form-check-label" for="cafe">Café da manhã</label>
+                    <input class="" type="checkbox" name="park" value="Estacionamento" class="form-check-input"
+                        id="wpp">
+                    <label class="me-3 form-check-label" for="park">Estacionamento</label>
+                    <input class="" type="checkbox" name="ar" value="Ar-condicionado" class="form-check-input"
+                        id="wpp">
+                    <label class="me-3 form-check-label" for="ar">Ar-condicionado</label>
+                </div>
+
+                <div class="row container mt-5 d-flex justify-content-center align-items-center">
+                    <div class="col ms-4">
+                        <label for="entrada">DATA DE ENTRADA</label>
+                        <input class="form-control" name="entrada" id="entrada" type="date">
+                    </div>
+                    <div class="col ms-5"> 
+                        <label for="saida">DATA DE SAÍDA</label>
+                        <input class="form-control" name="saida" id="saida" type="date">
+                    </div>
+                </div>
+                <div class="mt-4 d-flex justify-content-center align-items-center">
+                    <button type="submit" id="btn" class="mt-3 d-block mybtn btn">Salvar</button>
+                </div>
+            </div>
 
             </form>
         </main>
