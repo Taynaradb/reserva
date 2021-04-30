@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 *{
     padding: 0;
     margin: 0;
@@ -31,3 +32,48 @@ main{
     min-width: 200px;
     background-color: #fff;
 }
+
+.lilbox input{
+    width: 22px;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+=======
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-image: url(../images/bg.jpg);
+    font-family: 'Montserrat', sans-serif;
+}
+h1{
+    font-family: 'Original Surfer', cursive;
+}
+
+main{
+    text-transform: uppercase;
+}
+
+.box{
+    
+    border-radius: 1rem;
+    background-color: rgba(241, 241, 241, 0.9);
+}
+
+.mybtn, .btn:hover{
+    background-color: #602FA8 !important;
+    color: #fff !important;
+}
+
+.lilbox{
+    border-radius: 1rem;
+    min-height: 195x;
+    min-width: 200px;
+    background-color: #fff;
+}
+>>>>>>> refs/remotes/origin/main

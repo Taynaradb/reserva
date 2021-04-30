@@ -1,3 +1,114 @@
+<<<<<<< HEAD:index.php
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reserva</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Original+Surfer&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar navbar-light bg-light justify-content-end">
+        <a class="navbar-brand" href="admin.html">Área do adminstrador</a>
+      </nav>
+      <div class="container">
+    <div class="box mt-5 pb-5">
+        <header class="mt-5 d-flex justify-content-center align-items-center">
+            <h1 class="mt-5 text-center">Reseva de <br> Quartos</h1>
+            <img class="mt-4" src="images/logo.png" alt="sino">
+        </header>
+        <main>
+            <form action="querecebe.php" method="post">
+                <div class="row mt-5 d-flex justify-content-center">
+                    <div class="col-6">
+                        <label for="nome">Nome</label>
+                        <input class="form-control" name="nome" id="nome" type="text">
+
+                        <label for="tel">Telefone</label>
+                        <input class="form-control" name="tel" id="tel" type="text">
+                        <input type="hidden" name="wpp" value="Não">
+                        <input class="mt-0" type="checkbox" name="wpp" value="Sim" class="form-check-input" id="wpp">
+                        <label class="mt-2 form-check-label" for="wpp">Whatsapp</label>
+                    </div>
+
+                    <div class="col-4">
+                        <div class="lilbox p-4">
+                            <div class="d-flex justify-content-center align-items-center">
+                                <label class="me-5" for="adultos">Adultos</label>
+                                <button class="btn">-</button>
+                                <input name="adultos" value="" type="number">
+                                <button class="btn">+</button>
+                            </div>
+                            <div class="d-flex justify-content-center align-items-center">
+                                <label class="me-5" for="kids">Crianças</label>
+                                <button class="btn">-</button>
+                                1
+                                <button class="btn">+</button>
+                            </div>
+                            <div class="d-flex justify-content-center align-items-center">
+                                <label class="me-5" for="quarto">Quartos</label>
+                                <button class="btn">-</button>
+                                1
+                                <button class="btn">+</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-5 text-center">
+                    <input type="hidden" name="wpp" value="Nenhum">
+                    <input class="" type="checkbox" name="fuma" value="Fumante" class="form-check-input" id="wpp">
+                    <label class="me-3 form-check-label" for="fuma">Fumante</label>
+                    <input class="" type="checkbox" name="cafe" value="Café da manhã" class="form-check-input"
+                        id="wpp">
+                    <label class="me-3 form-check-label" for="cafe">Café da manhã</label>
+                    <input class="" type="checkbox" name="park" value="Estacionamento" class="form-check-input"
+                        id="wpp">
+                    <label class="me-3 form-check-label" for="park">Estacionamento</label>
+                    <input class="" type="checkbox" name="ar" value="Ar-condicionado" class="form-check-input"
+                        id="wpp">
+                    <label class="me-3 form-check-label" for="ar">Ar-condicionado</label>
+                </div>
+
+                <div class="row container mt-5 d-flex justify-content-center align-items-center">
+                    <div class="col ms-4">
+                        <label for="entrada">DATA DE ENTRADA</label>
+                        <input class="form-control" name="entrada" id="entrada" type="date">
+                    </div>
+                    <div class="col ms-5"> 
+                        <label for="saida">DATA DE SAÍDA</label>
+                        <input class="form-control" name="saida" id="saida" type="date">
+                    </div>
+                </div>
+                <div class="mt-4 d-flex justify-content-center align-items-center">
+                    <button type="submit" id="btn" class="mt-3 d-block mybtn btn">Salvar</button>
+                </div>
+            </div>
+
+            </form>
+        </main>
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+    <script src="bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="js/js.js"></script>
+</body>
+
+=======
 <!DOCTYPE html>
 <html lang="en">
 
@@ -103,4 +214,5 @@
     <script src="js/js.js"></script>
 </body>
 
+>>>>>>> refs/remotes/origin/main:index.html
 </html>

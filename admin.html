@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Área administrativo</title>
+    
+    <link href="bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Original+Surfer&display=swap"
+        rel="stylesheet">
+</head>
+<body>
+    
+
+    <nav class="navbar navbar-light bg-light justify-content-end">
+        <a class="navbar-brand" href="admin.html">Área do adminstrador</a>
+      </nav>
+      <div class="container">
+    <div class="box mt-5 pb-5">
+        <header class="mt-5 mb-5 d-flex justify-content-center align-items-center">
+            <h3 class="mt-5 text-center">Reseva de <br> Quartos</h3>
+            <img class="mt-4" src="images/logo.png" width="100px" alt="sino">
+        </header>
+
+    <main class="mt-5 container">
+    <div class="d-flex justify-content-center align-items-center">
+    <table class="table table-bordered">
+        <thead class="thead-dark">
+          <tr>
+            <th scope="col">Nome completo</th>
+            <th scope="col">Telefone</th>
+            <th scope="col">Whatsapp</th>
+            <th scope="col">Data de entrada</th>
+            <th scope="col">Data de saída</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+            <td>@fat</td>
+          </tr>
+
+          <?php
+          include_once "config.php";
+
+          $sqlsome = "SELECT nome, tel, whatsapp, entrada, saida FROM tb_user";
+          $result = mysqli_query($conn, $sqlsome);
+
+          $datas = [];
+
+          if(mysqli_num_rows($result) > 0){
+            while($row = mysqli_fetch_assoc($result)){
+              $datas[] = $row;
+            }
+          }
+
+              
+          foreach($datas as $data){
+            echo "<tr>";
+            echo "<th>" . $data['nome'] . "</th>";
+            echo "<th>" . $data['tel'] ."</th>";
+            echo "<th>" . $data['whatsapp'] ."</th>";
+            echo "<th>" . $data['entrada'] ."</th>";
+            echo "<th>" . $data['saida'] ."</th>";
+            echo "</tr>";
+          }
+                       
+           ?>
+        </tbody>
+      </table>
+      
+      
+      <div>
+    </main>
+
+
+    <script src="bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="js/js.js"></script>
+</body>
+</html>
