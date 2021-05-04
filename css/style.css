@@ -1,27 +1,24 @@
+
 *{
     padding: 0;
     margin: 0;
 }
+
 body{
     background-image: url(../images/bg.jpg);
-    font-family: 'Montserrat', sans-serif;
     overflow-x: hidden; 
-}
-
-
-h1{
-    font-family: 'Original Surfer', cursive;
+    font-family: 'Quicksand', sans-serif;
 }
 
 main{
     text-transform: uppercase;
-    font-family: 'Montserrat', sans-serif;
 }
 
 .box{
+    
     border-radius: 1rem;
     background-color: rgba(241, 241, 241, 0.9);
-    
+    font-family: 'Montserrat', sans-serif;
 }
 
 .mybtn, .btn:hover{
@@ -29,4 +26,23 @@ main{
     color: #fff !important;
 }
 
+
+.lilbox{
+    border-radius: 1rem;
+    min-height: 195x;
+    min-width: 200px;
+    background-color: #fff;
+}
+
+.input-filed{
+    border: none;
+    border-radius: 1rem;
+    width: 40px;
+    text-align: center;
+    background-color: rgba(241, 241, 241, 0.9);
+}
+
+.adbtn{
+    margin-left: 0.2rem;
+}
 
