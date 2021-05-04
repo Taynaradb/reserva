@@ -8,18 +8,20 @@
         $nome = $_POST["nome"];
         $tel = $_POST["tel"];
         $wpp = $_POST["wpp"];
-     #   $adultos = $_POST["adultos"];
-      #  $criancas = $_POST["crianças"];
-       # $quartos = $_POST["quartos"];
-       # $fumante = $_POST["fumante"];
-       # $cafe = $_POST["café"];
-      #  $parking = $_POST["parking"];
-        # $ar = $_POST["ar"];
+        $adultos = $_POST["adultos"];
+        $kids = $_POST["kids"];
+        $quartos = $_POST["quartos"];
+        $fumante = $_POST["fumante"];
+        $cafe = $_POST["cafe"];
+        $parking = $_POST["parking"];
+        $ar = $_POST["ar"];
         $entrada = $_POST["entrada"];
         $saida = $_POST["saida"];
 
         mysqli_select_db($conn, '$banco');
-        $sql = "INSERT INTO reserva (`nome`, `tel`, `whatsapp`, `entrada`, `saida`)VALUES('$nome', '$tel', '$wpp', '$entrada', '$saida')";
+        $sql = "INSERT INTO reserva (`nome`, `tel`, `whatsapp`,`adultos`,`crianças`,
+        `quartos`,`fumante`,`café`,`parking`, `ar`,`entrada`, `saida`)VALUES('$nome', '$tel', '$wpp', 
+        '$adultos', '$kids','$quartos','$fumante','$cafe','$parking','$ar','$entrada', '$saida')";
 
         if(mysqli_query($conn, $sql)) {
             echo "<script>alert('Salvei seus dados!'); window.location = 'index.php'; </script>";
